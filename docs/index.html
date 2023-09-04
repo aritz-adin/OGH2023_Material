@@ -120,8 +120,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text">About</span></a>
+    <a class="nav-link" href="./OGH_Foundation.html" rel="" target="">
+ <span class="menu-text">OpenGeoHub Foundation</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="./about.qmd" rel="" target="">
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
@@ -135,7 +139,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#processing-and-visualizing-large-geospatial-data-using-r-python-and-julia" id="toc-processing-and-visualizing-large-geospatial-data-using-r-python-and-julia" class="nav-link active" data-scroll-target="#processing-and-visualizing-large-geospatial-data-using-r-python-and-julia">“Processing and visualizing large geospatial data using R, Python and Julia”</a>
+  <ul class="collapse">
+  <li><a href="#tidy-geographic-data-with-sf-dplyr-ggplot2-geos-and-friends-robin-lovelace" id="toc-tidy-geographic-data-with-sf-dplyr-ggplot2-geos-and-friends-robin-lovelace" class="nav-link" data-scroll-target="#tidy-geographic-data-with-sf-dplyr-ggplot2-geos-and-friends-robin-lovelace">Tidy geographic data with sf, dplyr, ggplot2, geos and friends (Robin Lovelace)</a></li>
+  <li><a href="#raster-and-vector-data-cubes-in-r-edzer-pebesma" id="toc-raster-and-vector-data-cubes-in-r-edzer-pebesma" class="nav-link" data-scroll-target="#raster-and-vector-data-cubes-in-r-edzer-pebesma">Raster and vector data cubes in R (Edzer Pebesma)</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -157,17 +171,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>Esto es una prueba.</p>
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<section id="processing-and-visualizing-large-geospatial-data-using-r-python-and-julia" class="level1">
+<h1><a href="https://opengeohub.org/summer-school/opengeohub-summer-school-poznan-2023/">“Processing and visualizing large geospatial data using R, Python and Julia”</a></h1>
+<p><img src="img/logo.png" class="img-fluid"></p>
+<section id="tidy-geographic-data-with-sf-dplyr-ggplot2-geos-and-friends-robin-lovelace" class="level2">
+<h2 class="anchored" data-anchor-id="tidy-geographic-data-with-sf-dplyr-ggplot2-geos-and-friends-robin-lovelace">Tidy geographic data with sf, dplyr, ggplot2, geos and friends (<a href="https://www.robinlovelace.net/">Robin Lovelace</a>)</h2>
+<p>This lecture will provide an introduction to working with geographic data using R in a ‘tidy’ way. It will focus on using the sf package to read, write, manipulate, and plot geographic data in combination with the tidyverse metapackage. Why use the sf package with the tidyverse? The lecture will outline some of the ideas underlying the tidyverse and how they can speed-up data analysis pipelines, while making data analysis code easier to read and write. We will see how the following lines</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
+<p>can provide a foundation on which the many geographic data analysis problems can be solved. The lecture will also cover on more recently developed packages that integrate with the tidyverse to a greater and lesser extent. We will look at how the geos package, which provides a simple and high-performance interface to the GEOS library for performing geometric operations on geographic data, integrates with the tidyverse. The tidyverse is not the right tool for every data analysis task and we touch on alternatives for working with raster data, with reference to the terra package, and alternative frameworks such as data.table. Finally, we will also look at how the ‘tidy’ philosophy could be implemented in other programming languages, such as Python.</p>
+<p>The focus throughout will be on practical skills and using packages effectively within the wider context of project management tools, integrated development environments (we recommend VS Code with appropriate extensions or RStudio), and version control systems.</p>
+<p><strong>Material del curso: <a href="https://ogh23.robinlovelace.net/" class="uri">https://ogh23.robinlovelace.net/</a></strong></p>
+<p><strong>GitHub repository: <a href="https://github.com/robinlovelace/opengeohub2023" class="uri">https://github.com/robinlovelace/opengeohub2023</a></strong></p>
+<p><strong>Enlace a la grabación en Youtube: <a href="https://www.youtube.com/watch?v=CwL_luh2tWs">parte 1</a>, <a href="https://www.youtube.com/watch?v=1sQN6r-u15o">parte 2</a></strong></p>
+</section>
+<section id="raster-and-vector-data-cubes-in-r-edzer-pebesma" class="level2">
+<h2 class="anchored" data-anchor-id="raster-and-vector-data-cubes-in-r-edzer-pebesma">Raster and vector data cubes in R (<a href="https://www.uni-muenster.de/Geoinformatics/en/institute/staff/index.php/119/edzer_pebesma">Edzer Pebesma</a>)</h2>
+<p>A common challenge with raster datasets is not only that they come in large files (single Sentinel-2 tiles are around 1 GB), but that many of these files, potentially thousands or millions, are needed to address the area and time period of interest. In 2022, Copernicus, the program that runs all Sentinel satellites, published 160 TB of images per day. This means that a classic pattern in using R consisting of downloading data to local disc, loading the data in memory, and analysing it is not going to work. This lectures describes how large spatial and spatiotemporal datasets can be handled with R, with a focus on packages <strong>sf</strong> and <strong>stars</strong>.</p>
+<p>For practical use, we classify large datasets as too large:</p>
+<ul>
+<li>to fit in working memory,</li>
+<li>to fit on the local hard drive, or</li>
+<li>to download to locally managed infrastructure (such as network attached storage)</li>
+</ul>
+<p>These three categories may (today) correspond very roughly to Gigabyte-, Terabyte- and Petabyte-sized datasets. Besides size considerations, access and processing speed also play a role, in particular for larger datasets or interactive applications. Cloud native geospatial formats are formats optimised with processing on cloud infrastructure in mind, where costs of computing and storage need to be considered and optimised.</p>
+<p><strong>Material del curso: <a href="https://edzer.github.io/OGH23/dc.html" class="uri">https://edzer.github.io/OGH23/dc.html</a> / <a href="https://r-spatial.org/book/">R book</a></strong></p>
+<p><strong>GitHub repository: <a href="https://github.com/edzer/OGH23" class="uri">https://github.com/edzer/OGH23</a></strong></p>
+<p><strong>Enlace a la grabación en Youtube: <a href="https://www.youtube.com/watch?v=c8omo1tEB-8">parte 1</a>, <a href="https://www.youtube.com/watch?v=hvST0r9F59Y">parte 2</a></strong></p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
