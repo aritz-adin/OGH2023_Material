@@ -1,8 +1,9 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "OGH2023_Material"
+  title: "OGH2023 Material"
   navbar:
     left:
       - href: index.qmd
