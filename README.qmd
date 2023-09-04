@@ -1,0 +1,6 @@
+---
+title: "OpenGeoHub Summer School 2023"
+format: gfm
+---
+
+Esto es una prueba.

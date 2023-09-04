@@ -1,7 +1,7 @@
 {
-  "hash": "b3bcfe1a156ff4052161a898cd36da60",
+  "hash": "13f26bdd53b58699ade064cb34933178",
   "result": {
-    "markdown": "---\ntitle: \"OGH2023_Material\"\n---\n\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit <https://quarto.org/docs/websites>.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
+    "markdown": "---\ntitle: \"OGH2023_Material\"\n---\n---\ntitle: \"OpenGeoHub Summer School 2023\"\nformat: gfm\n---\n\nEsto es una prueba.\n\n\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit <https://quarto.org/docs/websites>.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
