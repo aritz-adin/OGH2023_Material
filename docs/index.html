@@ -123,9 +123,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="./OGH_Foundation.html" rel="" target="">
  <span class="menu-text">OpenGeoHub Foundation</span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="./about.qmd" rel="" target="">
- <span class="menu-text"></span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
@@ -147,6 +147,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#tidy-geographic-data-with-sf-dplyr-ggplot2-geos-and-friends-robin-lovelace" id="toc-tidy-geographic-data-with-sf-dplyr-ggplot2-geos-and-friends-robin-lovelace" class="nav-link" data-scroll-target="#tidy-geographic-data-with-sf-dplyr-ggplot2-geos-and-friends-robin-lovelace">Tidy geographic data with sf, dplyr, ggplot2, geos and friends (Robin Lovelace)</a></li>
   <li><a href="#raster-and-vector-data-cubes-in-r-edzer-pebesma" id="toc-raster-and-vector-data-cubes-in-r-edzer-pebesma" class="nav-link" data-scroll-target="#raster-and-vector-data-cubes-in-r-edzer-pebesma">Raster and vector data cubes in R (Edzer Pebesma)</a></li>
+  <li><a href="#unsupervised-classification-clustering-of-satellite-images-with-r-krzysztof-dyba" id="toc-unsupervised-classification-clustering-of-satellite-images-with-r-krzysztof-dyba" class="nav-link" data-scroll-target="#unsupervised-classification-clustering-of-satellite-images-with-r-krzysztof-dyba">Unsupervised classification (clustering) of satellite images with R (Krzysztof Dyba)</a></li>
+  <li><a href="#introduction-to-working-with-spatial-data-in-python-michael-dorman" id="toc-introduction-to-working-with-spatial-data-in-python-michael-dorman" class="nav-link" data-scroll-target="#introduction-to-working-with-spatial-data-in-python-michael-dorman">Introduction to working with spatial data in Python (Michael Dorman)</a></li>
+  <li><a href="#processing-geospatial-data-using-juliageo-framework-marteen-pronk" id="toc-processing-geospatial-data-using-juliageo-framework-marteen-pronk" class="nav-link" data-scroll-target="#processing-geospatial-data-using-juliageo-framework-marteen-pronk">Processing geospatial data using JuliaGeo framework (Marteen Pronk)</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -176,12 +179,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="img/logo.png" class="img-fluid"></p>
 <section id="tidy-geographic-data-with-sf-dplyr-ggplot2-geos-and-friends-robin-lovelace" class="level2">
 <h2 class="anchored" data-anchor-id="tidy-geographic-data-with-sf-dplyr-ggplot2-geos-and-friends-robin-lovelace">Tidy geographic data with sf, dplyr, ggplot2, geos and friends (<a href="https://www.robinlovelace.net/">Robin Lovelace</a>)</h2>
-<p>This lecture will provide an introduction to working with geographic data using R in a ‘tidy’ way. It will focus on using the sf package to read, write, manipulate, and plot geographic data in combination with the tidyverse metapackage. Why use the sf package with the tidyverse? The lecture will outline some of the ideas underlying the tidyverse and how they can speed-up data analysis pipelines, while making data analysis code easier to read and write. We will see how the following lines</p>
+<p>This lecture will provide an introduction to working with geographic data using R in a ‘tidy’ way. It will focus on using the sf package to read, write, manipulate, and plot geographic data in combination with the tidyverse metapackage. Why use the <strong>sf</strong> package with the tidyverse? The lecture will outline some of the ideas underlying the tidyverse and how they can speed-up data analysis pipelines, while making data analysis code easier to read and write. We will see how the following lines</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>can provide a foundation on which the many geographic data analysis problems can be solved. The lecture will also cover on more recently developed packages that integrate with the tidyverse to a greater and lesser extent. We will look at how the geos package, which provides a simple and high-performance interface to the GEOS library for performing geometric operations on geographic data, integrates with the tidyverse. The tidyverse is not the right tool for every data analysis task and we touch on alternatives for working with raster data, with reference to the terra package, and alternative frameworks such as data.table. Finally, we will also look at how the ‘tidy’ philosophy could be implemented in other programming languages, such as Python.</p>
+<p>can provide a foundation on which the many geographic data analysis problems can be solved. The lecture will also cover on more recently developed packages that integrate with the tidyverse to a greater and lesser extent. We will look at how the <strong>geos</strong> package, which provides a simple and high-performance interface to the GEOS library for performing geometric operations on geographic data, integrates with the tidyverse. The tidyverse is not the right tool for every data analysis task and we touch on alternatives for working with raster data, with reference to the <strong>terra</strong> package, and alternative frameworks such as data.table. Finally, we will also look at how the ‘tidy’ philosophy could be implemented in other programming languages, such as Python.</p>
 <p>The focus throughout will be on practical skills and using packages effectively within the wider context of project management tools, integrated development environments (we recommend VS Code with appropriate extensions or RStudio), and version control systems.</p>
 <p><strong>Material del curso: <a href="https://ogh23.robinlovelace.net/" class="uri">https://ogh23.robinlovelace.net/</a></strong></p>
 <p><strong>GitHub repository: <a href="https://github.com/robinlovelace/opengeohub2023" class="uri">https://github.com/robinlovelace/opengeohub2023</a></strong></p>
@@ -200,6 +203,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>Material del curso: <a href="https://edzer.github.io/OGH23/dc.html" class="uri">https://edzer.github.io/OGH23/dc.html</a> / <a href="https://r-spatial.org/book/">R book</a></strong></p>
 <p><strong>GitHub repository: <a href="https://github.com/edzer/OGH23" class="uri">https://github.com/edzer/OGH23</a></strong></p>
 <p><strong>Enlace a la grabación en Youtube: <a href="https://www.youtube.com/watch?v=c8omo1tEB-8">parte 1</a>, <a href="https://www.youtube.com/watch?v=hvST0r9F59Y">parte 2</a></strong></p>
+</section>
+<section id="unsupervised-classification-clustering-of-satellite-images-with-r-krzysztof-dyba" class="level2">
+<h2 class="anchored" data-anchor-id="unsupervised-classification-clustering-of-satellite-images-with-r-krzysztof-dyba">Unsupervised classification (clustering) of satellite images with R (Krzysztof Dyba)</h2>
+<p>Unsupervised classification of satellite images is the process of grouping similar pixels on an image into homogeneous clusters based primarily on their spectral characteristics. This approach does not require reference (labeled) data, unlike supervised classification, therefore it can be used as a method of first choice. Satellite image classification is commonly used in a variety of fields, including environmental monitoring, land cover mapping, and disaster management. The generated thematic maps can be used to identify and monitor changes in land use, and assess the impact of natural disasters.</p>
+<p>During this workshop, participants will gain practical knowledge and skills to perform unsupervised classification of Landsat data using the R language. It will be demonstrated step by step how to use and prepare raster data for analysis, popular grouping methods will be discussed and finally we will prepare a land cover map with interpretation of the results. The workshop will also cover the challenges and limitations of unsupervised classification, such as subjective interpretation of results difficulty of selecting the optimal number of clusters, and validation methods for ensuring the accuracy and reliability of results.</p>
+<p>The workshop is aimed at beginners, but basic knowledge of GIS and satellite remote sensing is required.</p>
+<p><strong>Material del curso: <a href="https://kadyb.github.io/OGH2023/" class="uri">https://kadyb.github.io/OGH2023/</a></strong></p>
+<p><strong>GitHub repository: <a href="https://github.com/kadyb/OGH2023" class="uri">https://github.com/kadyb/OGH2023</a></strong></p>
+<p><strong>Enlace a la grabación en Youtube: <a href="https://www.youtube.com/watch?v=YJlnxyEpDu4">parte 1</a>, <a href="https://www.youtube.com/watch?v=i06fwdLyZmg">parte 2</a></strong></p>
+</section>
+<section id="introduction-to-working-with-spatial-data-in-python-michael-dorman" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-working-with-spatial-data-in-python-michael-dorman">Introduction to working with spatial data in Python (Michael Dorman)</h2>
+<p>Python is an extremely popular general-purpose programming language. It is used in a wide range of settings and for various purposes, including for spatial data processing and analysis.</p>
+<p>The aim of this tutorial is to give an introduction to methods of working with spatial data using Python. The tutorial will be split into two parts, introducing two central Python packages:</p>
+<ul>
+<li><p><code>geopandas</code>---For working with vector layers</p></li>
+<li><p><code>rasterio</code>---For working with rasters</p></li>
+</ul>
+<p>The tutorial will demonstrate typical basic workflows of processing spatial data: data input, processing, geo-computation, and exporting of the results. We will use realistic datasets, such as GTFS public transport data and remote sensing products.</p>
+<p>By the end of the tutorial, the participants will be able to:</p>
+<ul>
+<li><p>Import spatial data from files</p></li>
+<li><p>Subset and process the data</p></li>
+<li><p>Graphically display the data</p></li>
+<li><p>Perform spatial calculations (such as calculating distances, or applying raster algebra operators)</p></li>
+<li><p>Export the results</p></li>
+</ul>
+<p>To follow along and reproduce the results on your own computer, the prerequisite is to be able to run Python code in a Jupyter Notebook interface, linked to a Python environment with the two above-mentioned packages installed. Instructions will be sent in advance.</p>
+<p><strong>Material del curso: <a href="https://geobgu.xyz/presentations/p_2023_ogh/" class="uri">https://geobgu.xyz/presentations/p_2023_ogh/</a></strong></p>
+</section>
+<section id="processing-geospatial-data-using-juliageo-framework-marteen-pronk" class="level2">
+<h2 class="anchored" data-anchor-id="processing-geospatial-data-using-juliageo-framework-marteen-pronk">Processing geospatial data using JuliaGeo framework (<a href="https://www.evetion.nl/">Marteen Pronk</a>)</h2>
+<p>Julia is a programming language that is simple to write and scriptable like Python and R, but fast like C or C++. At 10 years, it's a young language, so the ecosystem isn't as large and mature as you want it to be. Maarten Pronk was an early adopter of the language in his research at Deltares, a Dutch research institute. In this lecture(s) he will introduce Julia, his motivation to use it and his OSS journey. Half of the lecture will be non-spatial, while the latter half will focus on the JuliaGeo ecosystem and showcased some of the possibilities of the Julia language.<br>
+</p>
+<p>The JuliaGeo GitHub organization is intended primarily for the collaborative development of packages that are generally applicable across the geospatial and geosciences domains. For dealing with geospatial data, packages from the JuliaGeometry and JuliaImages organizations may also be of interest, and we will aim for good integration with those. Since the JuliaGeo organization aims to provide mostly general tools, more domain specific packages may be better suited for development in domain specific organizations. JuliaClimate is a nice example of such an organization that will be especially interesting to climate, atmosphere and ocean scientists. EcoJulia also provides some tools for generating and downloading spatial data sets, with a focus on ecological applications.</p>
+<p><strong>GitHub repository: <a href="https://github.com/evetion/OGH2023" class="uri">https://github.com/evetion/OGH2023</a></strong></p>
 
 
 </section>
@@ -437,6 +476,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

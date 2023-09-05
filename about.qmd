@@ -1,0 +1,9 @@
+---
+title: "About"
+---
+
+*This is a Quarto website.*
+
+*To learn more about Quarto websites visit <https://quarto.org/docs/websites>.*
+
+*The content below was rendered from README.qmd in the [aritz-adin/OGH2023_Material GitHub repository](https://github.com/aritz-adin/OGH2023_Material) where you can find the source code for this website.*

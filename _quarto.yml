@@ -9,13 +9,14 @@ website:
       - href: index.qmd
         text: Home
       - href: OGH_Foundation.qmd
-      - href: about.qmd
+      - about.qmd
 
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
+    link-external-newwindow: true
 
 editor: visual
 
