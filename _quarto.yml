@@ -9,7 +9,8 @@ website:
       - href: index.qmd
         text: Home
       - href: OGH_Foundation.qmd
-      - about.qmd
+      - href: resources.qmd
+      - href: about.qmd
 
 format:
   html:

@@ -46,7 +46,7 @@
     "href": "OGH_Foundation.html",
     "title": "OpenGeoHub Foundation",
     "section": "",
-    "text": "Enlaces de interés:\n\nhttps://opengeohub.org\nOpenGeoHub video portal (IB AV-Portal)\nYoutube channel\n\nLibros online sobre Geocomputation con R, Python y Julia:\n\nR books: Geocomputation with R, Spatial Data Science, Geographic Data Science with R\nPython books: Geocomputation with Python, Introduction to Python for Geographic Data Analysis, Geographic Data Science with Python\nJulia video: JuliaGeo: a gentle introduction"
+    "text": "Enlaces de interés:\n\nhttps://opengeohub.org\nOpenGeoHub video portal (IB AV-Portal)\nYoutube channel"
   },
   {
     "objectID": "OGH_Foundation.html#opengeohub-foundation",
@@ -145,5 +145,12 @@
     "title": "OpenGeoHub Summer School 2023",
     "section": "Mapping explanation - Python toolchaing for spatial interpretative machine learning (Jarosław Jasiewicz)",
     "text": "Mapping explanation - Python toolchaing for spatial interpretative machine learning (Jarosław Jasiewicz)\nThe course will present applications of interpretive machine learning methods to geospatial analysis. Interpretive machine learning is a new branch of machine learning that allows the decomposition of black box models. It allows complex, non-linear models to explain the criteria that lead to a result. In the case of geospatial data, it can be used to search for patterns of spatial explanatory factors. The course covers the entire toolchain from data preparation, model training, and the data transformation process, through data analysis and interpretation of the results, to spatial visualization. The toolchain includes tools such as the shap library, selected components of the scikit-learn, geopandas, and matplotlib packages. The course includes a theoretical introduction to interpretive machine learning and how it can be applied to geospatial data. The practical part is built around analysing the U.S. presidential election results Clinton vs. Trump. In the first step, explanatory variables are collected and transformed into shapely numbers. The data transformed in this way will determine the relevance of the explanatory variables and their actual impact on the election outcome in each county. The advantage of shapely numbers is that the variables are automatically weighted, allowing for efficient clustering. The shapely numbers and their clustering results reveal interesting spatial patterns in the electoral process.\n\nVideo: Sharing your geospatial knowledge in the open (Jakub Nowosad)"
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Online resources",
+    "section": "",
+    "text": "Libros online sobre Geocomputation con R, Python y Julia:\n\nR books: Geocomputation with R, Spatial Data Science, Geographic Data Science with R\nPython books: Geocomputation with Python, Introduction to Python for Geographic Data Analysis, Geographic Data Science with Python\nJulia video: JuliaGeo: a gentle introduction"
   }
 ]
